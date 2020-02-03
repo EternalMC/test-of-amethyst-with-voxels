@@ -5,7 +5,7 @@ name: Clippy
 jobs:
   check:
     name: Check
-    runs-on: ubuntu-latest
+    runs-on: [windows-latest, ubuntu-latest, macos-latest]
     steps:
       - run: sudo apt-get install gcc pkg-config openssl libasound2-dev cmake build-essential python3 libfreetype6-dev libexpat1-dev libxcb-composite0-dev libssl-dev libx11-dev
       - uses: actions/checkout@v1
